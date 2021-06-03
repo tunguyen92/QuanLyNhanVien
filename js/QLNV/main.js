@@ -204,6 +204,7 @@ getEle("btnThem").addEventListener("click", function () {
   getEle("tknv").disabled = false;
   getEle("btnThemNV").style.display = "block";
   getEle("btnCapNhat").style.display = "none";
+  getEle("reset").style.display = "block";
 
   var divErr = document.getElementsByClassName("alert-danger");
   for (var i = 0; i < divErr.length; i++) {
@@ -257,6 +258,7 @@ function suaNhanVien(taiKhoan) {
 
   getEle("btnCapNhat").style.display = "block";
   getEle("btnThemNV").style.display = "none";
+  getEle("reset").style.display = "none";
 
   var divErr = document.getElementsByClassName("alert-danger");
   for (var i = 0; i < divErr.length; i++) {
