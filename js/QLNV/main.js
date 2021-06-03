@@ -280,6 +280,14 @@ getEle("btnCapNhat").addEventListener("click", function () {
   setLocalStorage();
 });
 
+getEle("reset").addEventListener("click", function () {
+  getEle("formNV").reset();
+  var divErr = document.getElementsByClassName("alert-danger");
+  for (var i = 0; i < divErr.length; i++) {
+    divErr[i].style.display = "none";
+  }
+});
+
 //Tìm kiếm nhân viên
 getEle("searchName").addEventListener("keyup", function () {
   var keyWord = getEle("searchName").value;
